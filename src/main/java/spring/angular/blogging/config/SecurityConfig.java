@@ -43,6 +43,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
+    	
+    	System.out.println("Security config added comment");
+    	
         httpSecurity
             .csrf().disable()
             .authorizeRequests()
