@@ -33,6 +33,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public AuthenticationResponse login(@RequestBody User loginRequest) {
+    	System.out.println(" Second print command");
         return authService.login(loginRequest);
     }
     
